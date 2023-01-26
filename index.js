@@ -47,7 +47,7 @@ const addManager = () => {
             name: 'email',
             message: "Please enter the manager's email.",
             validate: email => {
-                if (valid) {
+                if (email) {
                     return true;
                 } else {
                     console.log ('Please enter an email!')
