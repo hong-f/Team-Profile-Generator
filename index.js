@@ -2,9 +2,9 @@
 const createHTML = require('./src/createHTML');
 
 // team profiles
-const Manager = require('./lib/Manager');
-const Engineer = require('./lib/Engineer');
-const Intern = require('./lib/Intern'); 
+const Manager = require('./lib/manager');
+const Engineer = require('./lib/engineer');
+const Intern = require('./lib/intern'); 
 
 // node modules 
 const fs = require('fs'); 
@@ -47,7 +47,6 @@ const addManager = () => {
             name: 'email',
             message: "Please enter the manager's email.",
             validate: email => {
-                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                 if (valid) {
                     return true;
                 } else {
@@ -124,7 +123,7 @@ const addEmployee = () => {
             name: 'email',
             message: "Please enter the employee's email.",
             validate: email => {
-                valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
+                
                 if (valid) {
                     return true;
                 } else {

@@ -25,6 +25,3 @@ test('test if we can return the getRole() method', () => {
     expect(manager.getRole()).toBe('Manager');
 });
 
-// test('test if we can return the getOfficeNumber() method', () => {
-//     expect(manager.getOfficeNumber()).toBe('11');
-// });
